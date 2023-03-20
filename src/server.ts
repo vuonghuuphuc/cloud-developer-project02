@@ -49,7 +49,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
             //deletes any files on the server on finish of the response
             deleteLocalFiles([localPath]);
             
-        }).sendFile(localPath);
+        }).status(200).sendFile(localPath);
 
       });
   } );
